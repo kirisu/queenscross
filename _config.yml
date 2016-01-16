@@ -1,0 +1,11 @@
+# Site settings
+title: Queens Cross Driving School
+email: weejack@yahoo.co.uk
+description: > # Learn to druve with Queens Cross Driving School
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.queenscross.co.uk" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
