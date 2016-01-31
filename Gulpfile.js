@@ -5,7 +5,7 @@ var stylelint = require('stylelint');
 var scss = require('postcss-scss');
 var autoprefixer = require('autoprefixer');
 
-gulp.task('default', function () {
+gulp.task('sass', function () {
   return gulp.src(['_frontend/sass/**/*.scss'])
     .pipe(postcss([
       stylelint(),
@@ -14,3 +14,5 @@ gulp.task('default', function () {
     ], { syntax: scss }))
     .pipe( gulp.dest( '_sass' ) );
 });
+
+gulp.task('default', ['sass']);

@@ -2,7 +2,9 @@
   "name": "queenscross",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "build": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kirisu/queenscross.git"
