@@ -1,20 +1,109 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
-
-    {% include header.html %}
-
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        {{ content }}
-      </div>
-    </div>
-
+    {{ content }}
+    {% include contact.html %}
     {% include footer.html %}
-
   </body>
+  <script>
+    function initMap() {
+      var locations = [
+        {
+          label: 'Partick',
+          latlng: {
+            lat: 55.87106,
+            lng: -4.30810
+          }
+        },
+        {
+          label: 'Broomhill',
+          latlng: {
+            lat: 55.87326,
+            lng: -4.32393
+          }
+        },
+        {
+          label: 'Maryhill',
+          latlng: {
+            lat: 55.89817,
+            lng: -4.30286
+          }
+        },
+        {
+          label: 'Summerston',
+          latlng: {
+            lat: 55.89883,
+            lng: -4.29152
+          }
+        },
+        {
+          label: 'Bearsden',
+          latlng: {
+            lat: 55.92169,
+            lng: -4.33552
+          }
+        },
+        {
+          label: 'Milngavie',
+          latlng: {
+            lat: 55.94330,
+            lng: -4.31699
+          }
+        },
+        {
+          label: 'Hyndland',
+          latlng: {
+            lat: 55.87971,
+            lng: -4.31457
+          }
+        },
+        {
+          label: 'City Centre',
+          latlng: {
+            lat: 55.86424,
+            lng: -4.25181
+          }
+        },
+        {
+          label: 'Anniesland',
+          latlng: {
+            lat: 55.89017,
+            lng: -4.32546
+          }
+        },
+        {
+          label: 'West End',
+          latlng: {
+            lat: 55.90841,
+            lng: -4.31895
+          }
+        }
+      ]
 
+      var infowindow = new google.maps.InfoWindow({
+        content: "loading..."
+      });
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        scrollwheel: false,
+        center: { lat: 55.910, lng: -4.2590 },
+        zoom: 11
+      });
+
+      locations.map(function(location) {
+        var marker = new google.maps.Marker({
+          position: location.latlng,
+          map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', function () {
+          infowindow.setContent(location.label);
+          infowindow.open(map, this);
+        });
+      })
+    }
+  </script>
+  <script async defer src="//maps.googleapis.com/maps/api/js?callback=initMap">
+  </script>
 </html>

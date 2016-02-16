@@ -2,37 +2,89 @@
 layout: default
 ---
 
-<div class="cover-container">
+<!-- ******PROMO****** -->
+<section id="promo" class="promo section offset-header">
+  <div class="container text-center">
+    <h2 class="title">queens<span class="highlight"> cross</span></h2>
+    <p class="intro"><span class="promo__lplate">L</span>earn to drive with an A Grade <abbr title="Approved Driving Instructor">ADI</abbr></p>
+  </div><!--//container-->
+  <div class="social-media">
+    <div class="social-media-inner container text-center">
+    </div>
+  </div>
+</section><!--//promo-->
 
-  <div class="inner cover">
-    <h1 class="cover-heading">Queens Cross Driving School</h1>
-    <p class="lead">Learn to drive with Queens Cross Driving School. <br />Fill in the enquiry form below, or call on: 07970521241</p>
+<section class="section personal">
+  <div class="container">
+    <div class="personal__inner">
+      <div class="personal__message">
+        <div class="personal__profile">
+          <img class="img-responsive" src="images/john.png" alt="John Reid" />
+        </div><!--//profile-->
+        <div class="bubble">
+          <h3 class="bubble__title">Looking to learn to drive? Look no further!</h3>
+          <p>I have been teaching people to drive for over 25 years, and I absolutely <strong>LOVE</strong> my job! One of the most exciting things for me is getting my driving knowledge into the heads, hands and feet of my students.</p>
+          <p>I have constantly passed the DVLA Driving Instructor Check Test at the highest grade, and am currently an A Grade ADI. I pride myself on adapting my lessons to suit my students, no matter if you are experienced, inexperienced, young, old or nervous!</p>
+          <p>In addition to teaching learners, I have taught chauffers for the Commonwealth Games, conducted driving assessments for STV and taught various members of the band <a href="http://twinatlantic.com/" target="_blank">Twin Atlantic</a>!</p>
+          <p>I provide individual lessons, semi-intensive courses, Motorway lessons and Pass Plus. Don't worry if you're nervous or unsure about anything - just give me a call and can sort it out!</p>
+          <p>I look forward to welcoming you to my school, and can't wait to see you pass your test with Queens Cross!</p>
+          <div class="bubble__source">
+            <span class="source__name">John Reid</span>
+            <br />
+            <span class="source__title">A Grade Approved Driving Instructor</span>
+          </div><!--//source-->
+        </div><!--//speech-bubble-->
+      </div><!--//author-message-->
+    </div>
+  </div>
+</section>
+
+<section class="section location">
+  <div class="container">
+    <h2 class="title text-center">Areas Covered</h2>
+  </div>
+  <div id="map" class="map"></div>
+</section>
+
+<section class="section pricing">
+  <div class="container">
+    <h2 class="title text-center">Pricing</h2>
     <div class="row">
-      <div class="col-sm-6 col-sm-push-3">
-        <form class="contact-form" action="//formspree.io/weejack@yahoo.com"
-          method="POST">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" name="name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="_replyto">
-          </div>
-          <div class="form-group">
-            <label for="enquiry">Message</label>
-            <textarea class="form-control" id="enquiry" name="enqury" rows="3"></textarea>
-          </div>
-          <input type="submit" class="btn btn-lg btn-default" value="Send">
-        </form>
+      <div class="col-md-9">
+        <div class="pricing__table">
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th>Lesson Type</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tr>
+              <th>Hourly Lesson</th>
+              <td>£21 per hour</td>
+            </tr>
+            <tr>
+              <th>10hr Block</th>
+              <td>£200<sup>*</sup></td>
+            </tr>
+            <tr>
+              <th>Pass Plus Course</th>
+              <td>£150</td>
+            </tr>
+            <tr>
+              <th>Motorway Lesson (2hrs)</th>
+              <td>£48</td>
+            </tr>
+          </table>
+          <small><sup>*</sup>Block bookings are paid on commencement of first lesson.</small>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="pricing__teaching-info text-center">
+          <span class="glyphicon glyphicon-info-sign gi-2x" aria-hidden="true"></span>
+          <p>All teaching is done with iPad-based Apps - no paper and pens! Progress can be emailed so you can check your improvements over time.</p>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="mastfoot">
-    <div class="inner">
-      <p></p>
-    </div>
-  </div>
-
-</div>
+</section>
