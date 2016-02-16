@@ -1,0 +1,35 @@
+header {
+  background: $color;
+  color: #fff;
+  padding-top: 20px;
+  border-bottom: 10px solid darken($color, 15%);
+}
+
+.header__intro {
+  font-size: 28px;
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.header__title {
+  font-size: 98px;
+  color: darken($color, 30%);
+  margin-top: 0;
+}
+
+.header__highlight {
+  color: $color-2;
+}
+
+.header__lplate {
+  background-color: #fff;
+  color: red;
+  display: inline-block;
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding: 0 12px;
+  margin-right: 2px;
+  -webkit-transform: rotateZ(-8deg);
+          transform: rotateZ(-8deg);
+}

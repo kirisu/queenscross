@@ -1,0 +1,13 @@
+.footer {
+  padding: 15px 0;
+  background: darken($color, 40%);
+  color: #fff;
+}
+
+.footer__copyright {
+  @include opacity(0.8);
+}
+
+.footer__glyphicon {
+  color: $heart;
+}
